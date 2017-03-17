@@ -2,15 +2,13 @@ ListView {
     margin: 5;
 }
 Label {
-    margin: 10;
-    horizontal-align: left;
-    vertical-align: center;
+    padding: 10;
+    vertical-align: middle;
 }
-TextField {
-    border-width: 5;
-    border-style: solid;
-    border-color: #034793;
+.name {
+    width: 80%;
 }
-Image {
-    margin: 10;
+.qty {
+    width: 20%;
+    text-align: right;
 }

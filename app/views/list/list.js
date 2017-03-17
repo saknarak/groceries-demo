@@ -1,7 +1,9 @@
 let page
 var observableModule = require("data/observable")
 var ObservableArray = require("data/observable-array").ObservableArray;
+const moment = require('moment')
 var pageData = new observableModule.fromObject({
+  next30day: moment().add(30, 'days').format('D MMMM YYYY'),
   groceryList: new ObservableArray([
     { name: 'Book', qty: 2 },
     { name: 'Notebook', qty: 1 },

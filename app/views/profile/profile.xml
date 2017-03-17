@@ -1,0 +1,6 @@
+<Page loaded="pageLoad">
+  <StackLayout>
+    <Button text="ถ่ายรูป" tap="takePhoto"/>
+    <Image id="photo"/>
+  </StackLayout>
+</Page>

@@ -1,10 +1,13 @@
 <Page loaded="pageLoad">
-  <ListView items="{{ groceryList }}">
-    <ListView.itemTemplate>
-      <StackLayout orientation="horizontal">
-        <Label text="{{ name }}"/>
-        <Label text="{{ qty }}"/>
-      </StackLayout>      
-    </ListView.itemTemplate>
-  </ListView>
+  <StackLayout>
+    <Label text="{{ next30day }}"/>
+    <ListView items="{{ groceryList }}">
+      <ListView.itemTemplate>
+        <StackLayout orientation="horizontal">
+          <Label class="name" text="{{ name }}"/>
+          <Label class="qty" text="{{ qty }}"/>
+        </StackLayout>      
+      </ListView.itemTemplate>
+    </ListView>
+  </StackLayout>
 </Page>
