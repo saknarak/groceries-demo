@@ -1,2 +1,2 @@
 var app = require("application");
-app.start({ moduleName: "views/profile/profile" });
+app.start({ moduleName: "views/login/login" });

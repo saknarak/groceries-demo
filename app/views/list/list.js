@@ -14,12 +14,16 @@ var pageData = new observableModule.fromObject({
 exports.pageLoad = (args) => {
   page = args.object
   page.bindingContext = pageData
-//   setTimeout(() => {
-//     context.list.push({
-//       name: 'New Item',
-//       qty: 5
-//     })
-// //  context.list.setItem(0, {name:'Hello', qty:5})
-// //  context.list[0].name = 'Hello'
-//   }, 5000)
+  console.log('test navigationContext')
+  let data = page.navigationContext
+  console.log(data.email)
+  console.log(data.pass)
+  setTimeout(() => {
+    pageData.groceryList.push({
+      name: 'New Item',
+      qty: 5
+    })
+//  context.list.setItem(0, {name:'Hello', qty:5})
+//  context.list[0].name = 'Hello'
+  }, 5000)
 }

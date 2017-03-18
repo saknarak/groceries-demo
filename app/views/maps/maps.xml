@@ -1,0 +1,5 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" xmlns:maps="nativescript-google-maps-sdk" loaded="pageLoaded">
+    <GridLayout>
+        <maps:mapView/>
+    </GridLayout>
+</Page>
